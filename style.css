@@ -1,0 +1,59 @@
+#OTP{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+#otp1, #otp2, #otp3, #otp4, #otp5, #otp6{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: green;
+    color: white;
+    text-align: center;
+}
+h1,p{
+    text-align: center;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#email{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+#emailDiv{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.verifyDiv1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.hidden{
+    display: none;
+}

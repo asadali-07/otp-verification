@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/color/512/javascript.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>OTP Validation</h1>
+    <div id="emailDiv">
+      <label for="email">Enter the Email</label>
+      <input type="email" id="email" required />
+      <button id="send">Send OTP</button>
+      <p id="message1"></p>
+    </div>
+    <div class="hidden verifyDiv1" id="verifyDiv">
+      <div id="OTP">
+        <input
+          type="text"
+          id="otp1"
+          maxlength="1"
+          oninput="moveToNext(this, 'otp2')"
+        />
+        <input
+          type="text"
+          id="otp2"
+          maxlength="1"
+          oninput="moveToNext(this, 'otp3')"
+        />
+        <input
+          type="text"
+          id="otp3"
+          maxlength="1"
+          oninput="moveToNext(this, 'otp4')"
+        />
+        <input
+          type="text"
+          id="otp4"
+          maxlength="1"
+          oninput="moveToNext(this, 'otp5')"
+        />
+        <input
+          type="text"
+          id="otp5"
+          maxlength="1"
+          oninput="moveToNext(this, 'otp6')"
+        />
+        <input type="text" id="otp6" maxlength="1" />
+      </div>
+      <button id="verify">Verify</button>
+      <p id="message2"></p>
+    </div>
+  </body>
+  <script>
+    function moveToNext(current, nextFieldID) {
+      if (current.value.length === 1) {
+        document.getElementById(nextFieldID)?.focus();
+      }
+    }
+  </script>
+  <script src="verify.js"></script>
+</html>
